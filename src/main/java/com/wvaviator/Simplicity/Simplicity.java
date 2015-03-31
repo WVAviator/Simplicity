@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import com.wvaviator.Simplicity.Homes.HomeCommand;
 import com.wvaviator.Simplicity.Homes.SetHomeCommand;
+import com.wvaviator.Simplicity.Inventories.ClearInventoryCommand;
 import com.wvaviator.Simplicity.Spawn.SetSpawn;
 import com.wvaviator.Simplicity.Spawn.Spawn;
 import com.wvaviator.Simplicity.Spawn.SpawnHandler;
@@ -84,6 +85,7 @@ public class Simplicity {
 		e.registerServerCommand(new SetHomeCommand());
 		e.registerServerCommand(new SetSpawn());
 		e.registerServerCommand(new Spawn());
+		e.registerServerCommand(new ClearInventoryCommand());
 		
 		
 	}
