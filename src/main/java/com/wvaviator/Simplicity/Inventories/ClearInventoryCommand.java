@@ -59,6 +59,8 @@ public class ClearInventoryCommand implements ICommand {
 
 		InventoryPlayer inv = player.inventory;
 		inv.clear();
+		
+		Chat.toChat(player, Chat.clearInv);
 
 	}
 
