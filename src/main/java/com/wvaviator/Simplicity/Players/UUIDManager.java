@@ -29,7 +29,7 @@ public class UUIDManager {
 				return null;
 			}
 			
-			rs.getString("uuid");
+			uuid = rs.getString("uuid");
 			return uuid;
 			
 		} finally {
