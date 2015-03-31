@@ -3,6 +3,8 @@ package com.wvaviator.Simplicity;
 import java.io.File;
 import java.sql.SQLException;
 
+import com.wvaviator.Simplicity.ChatBox.BroadcastCommand;
+import com.wvaviator.Simplicity.ChatBox.MsgCommand;
 import com.wvaviator.Simplicity.Homes.HomeCommand;
 import com.wvaviator.Simplicity.Homes.SetHomeCommand;
 import com.wvaviator.Simplicity.Inventories.ClearInventoryCommand;
@@ -20,7 +22,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = "simplicity", name = "Simplicity", version = "0.0.2", acceptableRemoteVersions = "*")
+@Mod(modid = "simplicity", name = "Simplicity", version = "0.0.3", acceptableRemoteVersions = "*")
 public class Simplicity {
 
 	public static String modDirectory = null;
@@ -86,6 +88,8 @@ public class Simplicity {
 		e.registerServerCommand(new SetSpawn());
 		e.registerServerCommand(new Spawn());
 		e.registerServerCommand(new ClearInventoryCommand());
+		e.registerServerCommand(new BroadcastCommand());
+		e.registerServerCommand(new MsgCommand());
 		
 		
 	}
