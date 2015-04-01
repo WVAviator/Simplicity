@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import com.wvaviator.Simplicity.ChatBox.BroadcastCommand;
 import com.wvaviator.Simplicity.ChatBox.MsgCommand;
+import com.wvaviator.Simplicity.ChatBox.ReplyCommand;
 import com.wvaviator.Simplicity.Homes.HomeCommand;
 import com.wvaviator.Simplicity.Homes.SetHomeCommand;
 import com.wvaviator.Simplicity.Inventories.ClearInventoryCommand;
@@ -90,6 +91,7 @@ public class Simplicity {
 		e.registerServerCommand(new ClearInventoryCommand());
 		e.registerServerCommand(new BroadcastCommand());
 		e.registerServerCommand(new MsgCommand());
+		e.registerServerCommand(new ReplyCommand());
 		
 		
 	}

@@ -14,6 +14,9 @@ public class Chat {
 	public static String spawnSet = EnumChatFormatting.LIGHT_PURPLE + "Spawn set!";
 	public static String clearInv = EnumChatFormatting.LIGHT_PURPLE + "Inventory cleared!";
 	public static String playerNotFound = EnumChatFormatting.LIGHT_PURPLE + "Player not found!";
+	public static String noReply = EnumChatFormatting.LIGHT_PURPLE +  "Nobody to reply to!";
+	public static String notOnline = EnumChatFormatting.LIGHT_PURPLE + "That player is no longer online!";
+	
 	
 	public static void toChat(ICommandSender sender, String message) {
 		ChatComponentText text = new ChatComponentText(message);

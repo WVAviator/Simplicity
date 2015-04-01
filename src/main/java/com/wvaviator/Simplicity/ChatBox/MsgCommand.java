@@ -102,6 +102,12 @@ public class MsgCommand implements ICommand {
 		
 		sender.addChatMessage(sM);
 		receiver.addChatMessage(rM);
+		
+		
+		if (sender instanceof EntityPlayerMP && receiver instanceof EntityPlayerMP) {
+			EntityPlayerMP player = (EntityPlayerMP) sender;
+		ReplyManager.saveReply(player, receiver);
+		}
 
 	}
 
